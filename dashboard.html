@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script Language="JavaScript"> 
+	<!--
+	function popup(url, name, width, height)
+	{
+		settings=
+		"toolbar=no,location=no,directories=no,"+
+		"status=no,menubar=no,scrollbars=yes,"+
+		"resizable=yes,width="+width+",height="+height;
+ 
+		MyNewWindow=window.open(""+url,name,settings);
+	}
+	//-->
+	</script>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<table style="border-collapse: collapse; width: 100%;" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 5%;">&nbsp;</td>
+            <td style="width: 90%;">&nbsp;</td>
+            <td style="width: 5%;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+			<!-- Horizontal navigation bar -->			
+			<div class="navbar">
+				<a href=""></a>
+				<a href="index.html">Home</a>
+				<a href="about_me.html">About Me</a>
+				<a href="research.html">My Research</a>
+				<a href="dataset.html">My Dataset</a>
+				<a href="dashboard.html">My Dashboard</a>
+			</div>			
+			</td>
+        </tr>
+        <tr>
+            <td style="width: 5%;">&nbsp;</td>
+            <td style="width: 90%;">
+			
+			<!-- Webpage Content -->
+			
+			<div class="content">
+			
+				<h2>My Dashboard</h2>
+
+					<p>The current .csv dataset I am using for my research is:
+    					 <a href="chicago_crime_data.csv"><tt>chicago_crime_data.csv</tt></a>.</p>
+
+					  <p>Below are research relevant queries and graphs.</p>
+
+				<h3>What would you like to know?</h3>
+					<ol>
+						<li><a href="#" onClick="popup('dash01.png', 'imgPopup1', 640, 480);">Top 5 Primary Types of Crime in Chicago</a></li>
+						<li><a href="#" onClick="popup('dash02.png', 'imgPopup2', 640, 480);">Top 5 Lowest Types of Crime in Chicago</a></li>
+						<li><a href="#" onClick="popup('dash07.png', 'imgPopup3', 640, 480);">Top 5 Primary Crime Types in Chicago With the Most Arrests</a></li>
+						<li><a href="#" onClick="popup('dash03.png', 'imgPopup4', 640, 480);">[Graph] Top 10 Primary Crime Types in Chicago (Pie Chart)</a></li>
+						<li><a href="#" onClick="popup('dash04.png', 'imgPopup5', 640, 480);">[Graph] Number of Crimes by Time of Day (Bar Chart)</a></li>
+						<li><a href="#" onClick="popup('dash06.png', 'imgPopup6', 640, 480);">[Graph] Top 5 Primary Crime Types in Chicago With the Most Arrests (Bar Chart)</a></li>
+					</ol>
+				
+			</div>
+			
+			</td>
+            <td style="width: 5%;">&nbsp;</td>
+        </tr>        
+    </tbody>
+</table>
+</body>
+</html>

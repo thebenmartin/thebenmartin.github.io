@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Large Dataset</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <script type="module">
+    const loading = document.getElementById('loading');
+    addEventListener('py:ready', () => loading.close());
+    loading.showModal();
+  </script>
+</head>
+<body>
+<table style="border-collapse: collapse; width: 100%;" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 5%;">&nbsp;</td>
+            <td style="width: 90%;">&nbsp;</td>
+            <td style="width: 5%;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+			<!-- Horizontal navigation bar -->			
+			<div class="navbar">
+				<a href=""></a>
+				<a href="index.html">Home</a>
+				<a href="about_me.html">About Me</a>
+				<a href="research.html">My Research</a>
+				<a href="dataset.html">My Dataset</a>
+				<a href="dashboard.html">My Dashboard</a>
+			</div>			
+			</td>
+        </tr>
+        <tr>
+            <td style="width: 5%;">&nbsp;</td>
+            <td style="width: 90%;">
+            
+<div class="content">
+	<center>
+			<img src="logo.png" height="150" alt="Hola"><br />
+	</center>
+  <h2>My Dataset</h2>
+  <p>The current .csv dataset I am using for my research is:
+  <a href="chicago_crime_data.csv"><tt>chicago_crime_data.csv</tt></a>.</p>
+  <dialog id="loading"><h1>Loading...</h1></dialog>
+  <div id="page-message"></div>
+
+  <div id="pandas-source">
+    <h3>Data Source</h3>
+    <input type="text" id="txt-url" class="py-input" size="70" />
+    <button type="submit" id="btn-load" class="py-button" py-click="loadFromURL">Load CSV</button>
+  </div>
+
+  <div id="pandas-output" hidden>
+    <h3>Output</h3>
+    <div id="pandas-output-inner"></div>
+  </div>
+
+  <div id="pandas-dev-console" hidden>
+    <h3>Dev Console</h3>
+    <script type="py" terminal></script>
+  </div>
+
+  <section class="pyscript">
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+  </section>
+</div>
+</body>
+</html>
