@@ -23,6 +23,16 @@ html {
 	scroll-behavior: smooth;
 }
 
+.content-wrapper {
+	background-color: #FAFAFA;
+	width: 80%;
+	min-height: calc(100vh - 60px);
+	padding: 60px;
+	box-shadow:0 0 10px rgba(25, 31, 52, 0.6);
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
 .navbar {
   width: 80%;
   display: flex;
@@ -43,16 +53,6 @@ html {
 .navbar a:hover {
   background: white;
   color: black;
-}
-
-.content-wrapper {
-	background-color: #FAFAFA;
-	width: 80%;
-	min-height: calc(100vh - 60px);
-	padding: 60px;
-	box-shadow:0 0 10px rgba(25, 31, 52, 0.6);
-	margin: 0 auto;
-	box-sizing: border-box;
 }
 
 h1 {
