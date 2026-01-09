@@ -36,9 +36,8 @@ html {
 .navbar {
   width: 80%;
   display: flex;
-  justify-content: center;
-  text-align: center;
   background: #111;
+  box-shadow:0 0 10px rgba(25, 31, 52, 0.6);
   margin: 0 auto;
   padding: 0px;
   color: white;
@@ -59,7 +58,7 @@ html {
 	padding: 0;
 	margin:  0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 h1 {
