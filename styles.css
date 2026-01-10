@@ -47,19 +47,23 @@ html {
   height: 120px;
 }
 .navbar a {
-  color: gray;
-  text-decoration: none;
-  padding: 16px 20px;
+	text-decoration: none;
+	color: gray;
+	display: block;
+	padding: 15px;
+	font-size: 17px;
+	font-family: Helvetica;
 }
 .navbar a:hover {
   background: white;
   color: black;
 }
-.nav-list {
+.nav ul {
 	list-style none;
 	padding: 0;
 	margin:  0;
 	display: flex;
+	text-align: center;
 	justify-content: space-evenly;
 }
 
