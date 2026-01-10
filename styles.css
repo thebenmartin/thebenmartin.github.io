@@ -51,20 +51,26 @@ html {
 	color: gray;
 	display: block;
 	padding: 15px;
-	font-size: 17px;
+	font-size: 30px;
 	font-family: Helvetica;
 }
 .navbar a:hover {
   background: white;
   color: black;
 }
-.nav ul {
-	list-style none;
+.nav-list {
+	list-style: none;
 	padding: 0;
 	margin:  0;
 	display: flex;
-	text-align: center;
+	align-items: center;
 	justify-content: space-evenly;
+}
+.nav-list li {
+	margin: 0 10px;
+}
+.nav-list a {
+	text-decoration: none;
 }
 
 h1 {
