@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 body { 
 padding-top: 0px; 
-background-color: #D3D3D3; 
+background-color: #9c9da4; 
 
 }
 
@@ -24,9 +24,9 @@ html {
 }
 
 .content-wrapper {
-	background-color: #FAFAFA;
+	background-color: #F2F0EF;
 	width: 80%;
-	min-height: calc(100vh - 60px);
+	min-height: calc(100vh - 120px);
 	padding: 60px;
 	box-shadow:0 0 10px rgba(25, 31, 52, 0.6);
 	margin: 0 auto;
@@ -36,6 +36,8 @@ html {
 .navbar {
   width: 80%;
   display: flex;
+  justify-content: center;
+  text-align: center;
   background: #111;
   box-shadow:0 0 10px rgba(25, 31, 52, 0.6);
   margin: 0 auto;
