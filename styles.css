@@ -24,6 +24,7 @@ html {
 .content-wrapper {
 	background-color: #F2F0EF;
 	width: 60%;
+	min-width: 320px;
 	min-height: calc(100vh - 125px);
 	padding: 60px;
 	/*box-shadow:0 0 10px rgba(25, 31, 52, 0.6);*/
