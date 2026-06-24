@@ -1,0 +1,11 @@
+﻿body{
+    margin: auto;
+    padding: 18px;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+}
+
+nav a{
+    margin: 0px 6px;
+}
